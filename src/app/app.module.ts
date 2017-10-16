@@ -18,12 +18,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import 'firebase/storage';
 
 const FIREBASE_CONFIG = {
-  apiKey: 'AIzaSyD-0RVTMySCqjOsuB7sjJTCf_D0mqOyW6g',
-  authDomain: 'simple-auth-rt.firebaseapp.com',
-  databaseURL: 'https://simple-auth-rt.firebaseio.com',
-  projectId: 'simple-auth-rt',
-  storageBucket: 'simple-auth-rt.appspot.com',
-  messagingSenderId: '493605566568'
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: ''
 };
 
 // App
@@ -35,7 +35,7 @@ import { MyApp } from './app.component';
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(FIREBASE_CONFIG, 'Simple auth'),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG, ''),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     BrowserModule,
